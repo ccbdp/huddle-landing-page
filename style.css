@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --font-poppins-400-600: font-family: 'Poppins', sans-serif;
+    --font-opensans-400: font-family: 'Open Sans', sans-serif;
+    --primary-color-violet: hsl(257, 40%, 49%);
+    --primary-color-soft-magenta: hsl(300, 69%, 71%);
+}
+html{
+    
+    background-image: url(images/bg-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: var(--primary-color-violet);
+}
+body{
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+main img{
+    width: 100%;
+    margin-top: 1.5em;
+    
+}
+
+.logo{
+    width: 40%;
+    margin: 2em 0;
+}
+h1,h2, footer, ion-icon{
+    color: white;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1.5em;
+    margin-bottom: .8em;
+}
+h2{
+    display: flex;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5em;
+}
+main a{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--primary-color-violet);
+    padding: 1em;
+    background-color: white;
+    padding: 1em 6em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    max-width: fit-content;
+    text-decoration: none;
+    border-radius: 3rem;
+    font-size: 15px;
+    filter: drop-shadow(0 .3rem 0.2rem hsla(0, 0%, 13%, 0.527));
+
+    
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+ion-icon{
+
+    border: 1px solid white;
+    padding: .3em;
+    border-radius:  50px;
+    margin: .3em;
+    margin-bottom: 1.5em;
+
+}
+.attribution a{
+    color: white;
+}
+.attribution a:hover{
+    color: var(--primary-color-soft-magenta);
+}
+@media screen and (min-width: 992px){
+
+    html{
+        background-image: url(images/bg-desktop.svg);
+
+    }
+    body{
+        width: 90%;
+    }
+
+    main img{
+        width: 60%;
+        margin-top: 1.5em;
+    }
+
+    main{
+        display: flex;
+    }
+    
+    .logo{
+        width: 15%;
+        margin: 2em 0;
+    }
+
+    .content{
+        margin: 0 3em;
+
+    }
+   
+    
+    h1{
+        text-align: start;
+        font-size: 35px;
+        line-height: 1.5em;
+        margin: 2em 3em .8em 0;
+    }
+    h2{
+        font-size: 16px;
+        text-align: start;
+        line-height: 1.5em;
+    }
+    main a{
+        margin: 0;
+        margin: 2em 0 0 0;
+        padding: 1em 4em;
+        
+    }
+    main a:hover{
+        background-color: var(--primary-color-soft-magenta);
+        color: white;
+    }
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    ion-icon{
+        margin: 0 .5em;
+
+    }
+    ion-icon:hover{
+        color: var(--primary-color-soft-magenta);
+        cursor: pointer;
+        border: 1px solid hsl(300, 69%, 71%);
+
+        
+    }
+    
+}
